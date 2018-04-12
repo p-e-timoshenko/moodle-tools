@@ -1818,7 +1818,7 @@ Private Sub SaveToMoodleGIFTFileStyledParagraphs(oDoc As Word.Document)
         Select Case ParagraphType
             Case "styled_category"
                 If PreviousParagraphType = "styled_answer" Then
-                    Exit Do
+                    fso.WriteText "}" & vbCrLf
                 End If
 
                 fso.WriteText vbCrLf
