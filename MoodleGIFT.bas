@@ -887,7 +887,7 @@ Private Function ProcessOrderedQuestionParagraph( _
         .Global = False
         .MultiLine = False
         .IgnoreCase = True
-        .Pattern = "^([\n\r]*)(\s*\d+\.)"
+        .Pattern = "^([\n\r]*)(\s*\d+\.)(?=\D)"
     End With
         
     Dim m As Object
